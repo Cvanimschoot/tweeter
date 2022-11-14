@@ -7,6 +7,8 @@
   color: #FFFFFF;
   padding: 0 1.5em 0 1.5em;
   justify-content: space-between;
+  position: fixed;
+  top: 0%;
 }
 
 .nav-bar > span {
