@@ -1,0 +1,65 @@
+.new-tweet {
+  width: 100%;
+  padding: 1.5em;
+ }
+
+ #tweet-text{
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border: none;
+  overflow: auto;
+  height: 30px;
+  width: 100%;
+ }
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+#under-tweet {
+  font-family: 'Bungee', sans-serif;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#button-tweet {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Bungee', sans-serif;
+  font-size: 80%;
+  height: 24px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 6em;
+}
+
+#button-tweet:disabled {
+  cursor: default;
+}
+
+#button-tweet:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
