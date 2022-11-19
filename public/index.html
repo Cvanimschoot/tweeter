@@ -16,6 +16,7 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./scripts/composer-char-counter.js"></script>
+    <script src="./scripts/client.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -27,6 +28,9 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- timeago -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
@@ -50,9 +54,9 @@
     </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="tweets-container">
       <section class="new-tweet">
-        <form action="/tweets" method="post">
+        <form id="new-tweet-form" action="/tweets" method="post">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <hr class="solid">
           <div id="under-tweet">
@@ -61,27 +65,6 @@
           </div>
         </form>
       </section>
-      <article>
-        <header>
-          <div>
-            <i class="fa-solid fa-glasses"></i>
-            <div>Newton</div>
-          </div>
-          <div>
-            <div>@SirIsaac</div>
-          </div>
-        </header>
-        <div class="posted-tweet">If I have seen further it is by standing on the shoulders of giants</div>
-        <hr class="solid">
-        <footer>
-          <div>10 days ago</div>
-          <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-sharp fa-solid fa-repeat"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
     </main>
   </body>
 </html>

@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  console.log("I'm ready");
+  console.log("composer-char-counter.js ready");
   $("#tweet-text").on('keyup', function() {
     const counter = $('.counter');
     let characterCount = $(this).val().length;

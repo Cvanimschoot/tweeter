@@ -4,6 +4,7 @@ article {
   padding: 1%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 article > header {
@@ -20,8 +21,8 @@ article > header > div:nth-of-type(1) {
   justify-content: space-between;
 }
 
-.fa-glasses {
-  margin-right: 10px;
+article > header > div:nth-of-type(1) > div {
+  margin-left: 10px;
 }
 
 article > .solid {
