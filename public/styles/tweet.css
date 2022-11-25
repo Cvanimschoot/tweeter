@@ -7,6 +7,10 @@ article {
   margin-bottom: 10px;
 }
 
+article:hover {
+  box-shadow: 4px 4px rgba(128, 128, 128, 0.632)
+}
+
 article > header {
   display: flex;
   flex-direction: row;

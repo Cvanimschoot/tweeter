@@ -8,6 +8,7 @@
   padding: 0 1.5em 0 1.5em;
   justify-content: space-between;
   position: fixed;
+  z-index:1;
   top: 0%;
 }
 
@@ -21,4 +22,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* FOR MOBILE VIEWING SCREEN */
+@media (max-width: 1023px) {
+  .nav-bar {
+    display: none;
+  }
 }

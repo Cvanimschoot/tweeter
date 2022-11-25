@@ -8,3 +8,19 @@
   align-items: center;
   background-image: url('../images/subtle-white-feathers.png');
 }
+
+/* FOR MOBILE VIEWING SCREEN */
+@media (max-width: 1023px) {
+  .header {
+    height: 400px;
+    padding: 0px
+  }
+}
+
+/* FOR DESKTOP/TABLET VIEWING SCREEN */
+@media (min-width: 1024px) {
+  .header {
+    width: 50%;
+    margin-top: 260px
+  }
+}

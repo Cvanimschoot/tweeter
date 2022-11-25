@@ -37,3 +37,16 @@ body {
   flex-direction: column;
   background-color: f4f1ec;
  }
+
+ /* FOR DESKTOP/TABLET VIEWING SCREEN */
+ @media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+  }
+
+  main {
+    padding-top: 220px;
+  }
+
+
+}

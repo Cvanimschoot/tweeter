@@ -33,22 +33,25 @@ const tweetData = [
 
 $(document).ready(function() { 
   console.log('client.js ready');
+  
+
   $('#error').hide();
+  
   loadTweets();
-  $("<div>").text();
+
   $('#new-tweet-form').submit(function(event) {
     event.preventDefault();
     const $tweet = $(this).serialize();
-    const $message = $('#tweet-text').val();
-    //$("<div>").text($message);
-    const $counter = Number($('.counter').val());
-    if ($message === '' || $message === null) {
+    const $message = $('#tweet-text').val(); // Store message within textarea
+    const $counter = Number($('.counter').val()); // Counters value
+    
+    if ($message === '' || $message === null) { // Message is blank
       $('#error-message').text('Message can\'t be empty or null');
       $('#error').show();
-    } else if ($counter < 0){
+    } else if ($counter < 0){ // Message is over the 140 character limit
       $('#error-message').text('Message can\'t be over 140 characters');
       $('#error').show();
-    } else {
+    } else { // Everything passes, now it can attempt a POST
       $.ajax({
         type: "POST",
         url: "/tweets",
@@ -67,9 +70,9 @@ $(document).ready(function() {
 });
 
 const createTweetElement = (data) => {
-  const timeAgo = timeago.format(tweet.created_at);
+  const timeAgo = timeago.format(tweet.created_at); // Grab time tweet posted
 
-  let $tweet = $( 
+  let $tweet = $( // Basic layout of tweet design. Will be affected by CSS.
     `
     <article>
       <header>
@@ -100,7 +103,7 @@ const createTweetElement = (data) => {
 const renderTweets = function(tweets) {
   for (tweet of tweets) {
     let $tweet = createTweetElement(tweet);
-    $(".tweets-container").append($tweet);
+    $(".tweets-container").append($tweet); // Append new tweets after the container
   }
 }
 
@@ -117,7 +120,7 @@ const loadTweets = () => {
   })
 }
 
-const escapeText = function (str) {
+const escapeText = function (str) { // Ensure there is no cross-site scripting
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
