@@ -14,15 +14,22 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-The registration page. The user can register an account so they can start creating short URLs. Login page is similar.
+The landing page. This is the desktop view of the landing page, where users will be able to see their own profile (the header with the 'Your Name' and profile picture) alongside the tweets of others to the right.
 
-!["Screenshot of registration page"](https://github.com/Cvanimschoot/tinyapp/blob/master/docs/register_page.png?raw=true)
+!["Screenshot of desktop view landing page"](https://github.com/Cvanimschoot/tweeter/blob/master/docs/tweeter-desktop-view.png?raw=true)
 
-This is the URLs page. Here, once a user is logged in, they will be able to see the URLs they have stored. The stored URLs will also showcase what their short URL is. The user, if the URLs belong to them, can edit and delete the URLs.
+While scrolling through the desktop view, the navigation bar will scroll with the user and they will be able to see more recent tweets. Hovering over icons (like the heart in this image) will have hover affects for selecting the action.
 
-!["Screenshot of URLs page"](https://github.com/Cvanimschoot/tinyapp/blob/master/docs/urls_page.png?raw=true)
+!["Screenshot of scrolling desktop page"](https://github.com/Cvanimschoot/tweeter/blob/master/docs/tweeter-scrolling.png?raw=true)
+
+On mobile devices, the profile section moves to the top and the nav bar is hidden away to make the user experience mobile friendly. All functionality remains the same as the desktop view
+
+!["Screenshot of mobile view landing page"](https://github.com/Cvanimschoot/tweeter/blob/master/docs/tweeter-mobile-view.png?raw=true)
 
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+- Body-Parser
+- Chance
+- md5
