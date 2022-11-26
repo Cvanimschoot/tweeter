@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // --- our code goes here ---
   console.log("composer-char-counter.js ready");
-  $("#tweet-text").on('keyup', function() {
+  $("#tweet-text").on('input', function() {
     const counter = $('.counter');
     let characterCount = $(this).val().length;
     let currentCount = 140 - characterCount;
