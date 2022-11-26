@@ -103,7 +103,7 @@ const createTweetElement = (data) => {
 const renderTweets = function(tweets) {
   for (tweet of tweets) {
     let $tweet = createTweetElement(tweet);
-    $(".tweets-container").append($tweet); // Append new tweets after the container
+    $(".new-tweet-container").prepend($tweet); // Append new tweets after the container
   }
 }
 

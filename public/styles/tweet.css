@@ -61,3 +61,11 @@ article > footer > div:nth-of-type(2) {
 .fa-heart:hover {
   color: rgb(160, 158, 46);
 }
+
+.new-tweet-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
